@@ -113,6 +113,7 @@
         const discountCodeInput = document.getElementById('discount-code');
         const applyDiscountButton = document.getElementById('apply-discount');
         const alertMessage = document.getElementById('alert-message');
+        const alertMessageSucc =document.getElementById('alert-message-succ')
         const payButton = document.getElementById('pay-button');
         const successMessage = document.getElementById('success-message');
         
@@ -123,11 +124,16 @@
                 const discount = discountCodes[discountCode];
                 totalPrice = totalPrice * (1 - discount);
                 totalPriceElement.textContent = totalPrice.toLocaleString();
-                alertMessage.style.display = 'none';      
+                alertMessage.style.display = 'none';
+                alertMessageSucc.style.display="block";      
                 applyDiscountButton.disabled = true;
                 discountCodeInput.disabled = true;
+               
+                
             } else {
                 alertMessage.style.display = 'block';
+                alertMessageSucc.style.display="none";      
+
             }
         });
          // پرداخت

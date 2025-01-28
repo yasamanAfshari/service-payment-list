@@ -198,6 +198,10 @@
     display: none;
     color: #D00000;
 }
+#alert-message-succ{
+    display: none;
+    color: #009022;
+}
 .toast{
     border: none;
 }
