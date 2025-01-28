@@ -1,0 +1,236 @@
+.title h5 {
+    font-family: "adellBold";
+    color: var(--main-txt);
+}
+
+
+.container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.list-wrapper {
+    min-height: 60px;
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+.status-wrapper {
+    width: 30px;
+    /* flex-basis: 5px; */
+    background-color: #1E398F;
+    height: 60px;
+    border-radius: 0 8px 8px 0;
+
+}
+
+
+.status {
+  
+    text-align: center;
+    color: white;
+  
+}
+
+.status span {
+    color: var(--txt);
+}
+
+/* @media (min-width: 992px) {
+    .list-box {
+        height: 420px !important;
+    }
+} */
+
+.list-box {
+    overflow-y: scroll;
+    max-height: 520px;
+    overflow-x: hidden;
+
+}
+
+.list-box::-webkit-scrollbar {
+
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 4px;
+}
+
+.list-box::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+
+.ticket-detail {
+    color: var(--main-txt);
+}
+
+.list-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.list-tooltip .tooltiptext {
+    visibility: hidden;
+    font-size: 14px;
+    width: max-content;
+   
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    z-index: 1080;
+    position: absolute;
+    top: -5px;
+    left: 110%;
+    transform: translateX(-50%);
+    opacity: 0;
+    
+    transition: opacity 0.3s; background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Show the tooltip text when hovering */
+.list-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1080;
+}
+
+.select-style{
+    border: 1px solid var(--stroke);
+}
+.list-box .dropdown-toggle::after{
+    display: none;
+}
+.referral .dropdown-menu{
+    height: 170px;
+    overflow-y: scroll;
+}
+.dropdown-menu::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 8px;
+}
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+.circle{
+    border-radius: 100%;
+    background-color: #1E398F;
+    width: 30px;
+    height: 30px;
+}
+.circle svg{
+    color: white;
+}
+.delete-icon svg{
+    color: #D00000;
+}
+
+.delete-icon-wrapper{
+    border-right: 2px solid #F3F5FF;
+}
+
+
+
+
+
+
+.detail-contain{
+    min-height: 90px;
+    width: 90%;
+   
+}
+
+.detail{
+    min-height: 110px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: white;
+    
+}
+#total-price{
+    color:#009022;
+}
+
+.form-control{
+    width: 65%;
+    background-color: #F3F5FF;
+    border-radius: 6px;
+}
+.form-control:active , .form-control:focus{
+    box-shadow: 0px 0px 9px -5px #1E398F;
+    outline: none;
+}
+
+.secondary-btn{
+    border: 2px solid #1E398F;
+    width: 85px;
+    background-color: transparent;
+    border-radius: 6px;
+    color: #1E398F;
+    height: 40px;
+    transition: all 0.5s;
+}
+.secondary-btn:hover{
+    color: white;
+    background-color: #1E398F;
+}
+.btn{
+    border: 2px solid #1E398F;
+    width: 85px;
+    height: 40px;
+    background-color: #1E398F;
+    border-radius: 6px;
+    color: white;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #081c5f;
+    color: white;
+}
+.alert{
+    display: none;
+    color: #D00000;
+}
+.toast{
+    border: none;
+}
+.toast-body{
+    border: 1px solid #009022;
+    box-shadow: 0px 0px 9px -5px #009022;
+    border-radius: 8px;
+    color: #009022;
+
+}
+@media (max-width: 768px) {
+    
+    .list-wrapper{
+        width: 100%;
+    }
+    .detail-contain{
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .status-wrapper{
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+         height: 20px;
+        
+    }
+    .status{
+        padding: 1px !important;
+    }
+    .list-wrapper{
+        width: 100%;
+    }
+    .detail-contain{
+        width: 100%;
+    }
+}
