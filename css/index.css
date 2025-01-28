@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: #F3F5FF;
+    background-color: var(--bg-color);
     direction: rtl;
     font-size: 16px;
 }
@@ -37,7 +37,7 @@ a {
 
 svg {
 
-    color: #1E398F;
+    color: var(--main-color);
 }
 
 .sidebar-wrapper nav {
@@ -51,7 +51,7 @@ svg {
 
 .sidebar-wrapper nav::-webkit-scrollbar {
 
-    background-color: #F3F5FF;
+    background-color: var(--bg-color);
     border-radius: 10px;
     width: 8px;
 }
@@ -82,13 +82,13 @@ nav ul li a {
 }
 
 .sidebar-wrapper nav ul li a:hover {
-    background: #1E398F;
+    background: var(--main-color);
     color: white;
     border-radius: 10px;
 }
 
 .sidebar-wrapper nav ul li a:hover svg {
-    color: #F3F5FF;
+    color: var(--bg-color);
 }
 
 .sidebar-wrapper nav ul li a .fa {
@@ -108,7 +108,7 @@ nav ul li a {
 	padding: 10px 20px;
 } */
 .sidebar-wrapper nav ul li ul li a:hover {
-    border-left: 4px solid #1E398F;
+    border-left: 4px solid var(--main-color);
 }
 
 .navbar-brand img {
@@ -121,7 +121,7 @@ nav ul li a {
 
 
 .line {
-    border: 1px solid #F3F5FF;
+    border: 1px solid var(--bg-color);
     margin: 10px 0px 10px 0px;
 }
 /* 
@@ -169,7 +169,7 @@ nav ul li a {
     height: 2px;
     display: flex;
     background: rgb(255, 255, 255);
-    background: #F3F5FF;
+    background: var(--bg-color);
     margin: 10px 0 10px 0;
 }
 
@@ -202,7 +202,7 @@ nav ul li a {
     right: -35px;
 }
 .profile-header .dropdown-menu li:first-child {
-    border-bottom: 2px solid #1E398F;
+    border-bottom: 2px solid var(--main-color);
     padding-bottom: 10px;
 }
 .dropdown-menu {

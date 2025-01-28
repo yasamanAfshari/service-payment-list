@@ -1,6 +1,12 @@
+:root{
+    --main-color: #1E398F;
+    --bg-color: #F3F5FF ;
+    --hover-color: #081c5f;
+}
+
 .title h5 {
     font-family: "adellBold";
-    color: var(--main-txt);
+    color: var(--main-color);
 }
 
 
@@ -21,8 +27,9 @@
 .status-wrapper {
     width: 30px;
     /* flex-basis: 5px; */
-    background-color: #1E398F;
+    background-color: var(--main-color);
     height: 60px;
+  
     border-radius: 0 8px 8px 0;
 
 }
@@ -121,7 +128,7 @@
 }
 .circle{
     border-radius: 100%;
-    background-color: #1E398F;
+    background-color: var(--main-color);
     width: 30px;
     height: 30px;
 }
@@ -133,7 +140,7 @@
 }
 
 .delete-icon-wrapper{
-    border-right: 2px solid #F3F5FF;
+    border-right: 2px solid var(--bg-color);
 }
 
 
@@ -160,38 +167,38 @@
 
 .form-control{
     width: 65%;
-    background-color: #F3F5FF;
+    background-color: var(--bg-color);
     border-radius: 6px;
 }
 .form-control:active , .form-control:focus{
-    box-shadow: 0px 0px 9px -5px #1E398F;
+    box-shadow: 0px 0px 9px -5px var(--main-color);
     outline: none;
 }
 
 .secondary-btn{
-    border: 2px solid #1E398F;
+    border: 2px solid var(--main-color);
     width: 85px;
     background-color: transparent;
     border-radius: 6px;
-    color: #1E398F;
+    color: var(--main-color);
     height: 40px;
     transition: all 0.5s;
 }
 .secondary-btn:hover{
     color: white;
-    background-color: #1E398F;
+    background-color: var(--main-color);
 }
 .btn{
-    border: 2px solid #1E398F;
+    border: 2px solid var(--main-color);
     width: 85px;
     height: 40px;
-    background-color: #1E398F;
+    background-color: var(--main-color);
     border-radius: 6px;
     color: white;
     transition: all 0.5s;
 }
 .btn:hover{
-    background-color: #081c5f;
+    background-color: var(--hover-color);
     color: white;
 }
 .alert{
